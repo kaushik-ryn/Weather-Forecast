@@ -1,0 +1,130 @@
+body{
+    background-color: #033432;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("img/weatherimg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: opacity(0.1);
+}
+#button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.2cap;
+    font-size: 15px;
+    padding: 20px 20px;
+    border-radius: 1cap;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 31, 31);
+
+}
+#button:hover{
+    box-shadow: 0 0 10px 10px rgb(16, 148, 148), 
+            0 0 10px 10px rgb(16, 148, 148),
+            0 0 10px 10px rgb(16, 148, 148),
+            0 0 10px 10px rgba(0, 255, 255, 1);
+
+}
+h2{
+  text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #343737;
+}
+.container{
+    background-color: #699391;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    min-width: 70vw;
+    border-radius: 1.5cap;
+    border: 1px solid #27554f;
+    
+}
+h1{
+    font-size: 45px;
+    font-style: italic;
+    color: #4c5453;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#Body-weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.body-weather
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Body-weather input
+{
+    outline: 1px solid#033432;
+    min-width: 40vw;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#Body-weather button
+{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #ccc;
+}
+
+
+
+
+h2{
+opacity: 0;
+display: inline-block;
+animation: fadeIn 100s forwards;
+animation-delay: calc(0.1s * var(--letter-index));
+}
+
+@keyframes fadeIn {
+to {
+    opacity: 1;
+}
+}
+
+h2:hover  {
+opacity: 1; /* Make sure text is fully visible when hovered */
+}
+
+/* Generate span for each letter with delay */
+h2:hover {
+animation: none;
+}
+
+h2 {
+display: inline;
+}
+h2 {
+opacity: 0;
+animation: fadeIn 1s forwards;
+}
+
+@media screen and (max-width: 320px) {
+h1{
+    font-size: 30px;
+}
+}
